@@ -7,7 +7,6 @@ const ASCII_ENDPOINT = "https://api.github.com/octocat";
 
 const getData = async function() {
   const response = await axios.get(`${ASCII_ENDPOINT}`);
-  console.log(response.data)
   return response.data;
 };
 
