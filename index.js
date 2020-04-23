@@ -1,12 +1,12 @@
-const express = require('express')
-const axios = require('axios')
+import express from 'express';
+import { get } from 'axios';
 const app = express()
 const port = 3000
 
 const ASCII_ENDPOINT = "https://api.github.com/octocat";
 
 const getData = async function() {
-  const response = await axios.get(`${ASCII_ENDPOINT}`);
+  const response = await get(`${ASCII_ENDPOINT}`);
   return response.data;
 };
 
