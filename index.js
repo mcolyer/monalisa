@@ -3,7 +3,7 @@ const axios = require('axios');
 const app = express()
 const port = 3000
 
-const WRONG_ENDPOINT = "https://api.github.com/octocat";
+const MONA_ENDPOINT = "https://api.github.com/octocat";
 
 const getData = async function() {
   try {
