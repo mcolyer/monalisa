@@ -1,3 +1,3 @@
 {
-  "image": "debian:buster-slim"
+  "image": "mcolyer/debian-slim-with-deps"
 }
