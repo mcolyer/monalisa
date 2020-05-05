@@ -1,4 +1,4 @@
-FROM debian:buster-slim
+FROM node:14.1-stretch-slim
 
 RUN apt-get update && apt-get install -y --no-install-recommends \
   # Install .NET Core dependencies
