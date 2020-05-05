@@ -1,3 +1,3 @@
 {
-  "image": "bitnami/minideb:jessie"
+  "image": "bitnami/minideb:buster"
 }
