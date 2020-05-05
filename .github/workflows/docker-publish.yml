@@ -1,0 +1,17 @@
+name: Publish devcontainer container
+on:
+  push:
+    paths:
+      - 'Dockerfile'
+
+jobs:
+  build:
+    name: Update devcontainer container
+    runs-on: ubuntu-latest
+    steps:
+      uses: docker/build-push-action@v1
+        with:
+          username: ${{ secrets.DOCKER_USERNAME }}
+          password: ${{ secrets.DOCKER_PASSWORD }}
+          repository: mcolyer/monalisa
+          tags: latest
